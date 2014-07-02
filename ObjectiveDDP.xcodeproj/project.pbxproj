@@ -137,6 +137,12 @@
 		EA781445196396A8002B801D /* libObjectiveDDP-MAC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libObjectiveDDP-MAC.a"; sourceTree = "<group>"; };
 		EA781446196396A8002B801D /* libPods-ObjectiveDDP-MAC-SocketRocket.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPods-ObjectiveDDP-MAC-SocketRocket.a"; sourceTree = "<group>"; };
 		EA781447196396A8002B801D /* libPods-ObjectiveDDP-MAC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPods-ObjectiveDDP-MAC.a"; sourceTree = "<group>"; };
+		EAC204C819640B88005FE94D /* Specs copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Specs copy-Info.plist"; path = "/Users/ma1460/git/ObjectiveDDP/Specs copy-Info.plist"; sourceTree = "<absolute>"; };
+		EAE0FD9B19640DA900EC2EEC /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		EAE0FD9D19640DA900EC2EEC /* Specs Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs Mac-Prefix.pch"; sourceTree = "<group>"; };
+		EAE0FD9E19640DA900EC2EEC /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cedar.framework; path = Frameworks/Cedar.framework; sourceTree = "<group>"; };
+		EAE0FDA019640DA900EC2EEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAE0FDA219640DA900EC2EEC /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
 		EAFDC0B41963706500646100 /* libObjectiveDDP-MAC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libObjectiveDDP-MAC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFDC0B51963706500646100 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		EAFDC0B81963706500646100 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -194,11 +200,13 @@
 				40A305F2178D27E800546C1F /* Default-568h@2x.png */,
 				4000D63B170E880400296229 /* ObjectiveDDP */,
 				4079F9DF170EB31D00194B4A /* Specs */,
+				EAE0FD9A19640DA900EC2EEC /* Specs Mac */,
 				4000D638170E880400296229 /* Frameworks */,
 				4000D637170E880400296229 /* Products */,
 				EA781441196396A8002B801D /* Products-Mac */,
 				07FAC83CF7A34024BB2C9295 /* Pods-ObjectiveDDP.xcconfig */,
 				DD17ECAC516047E5A9048101 /* Pods-ObjectiveDDP-MAC.xcconfig */,
+				EAC204C819640B88005FE94D /* Specs copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -331,6 +339,26 @@
 				EA781444196396A8002B801D /* ObjectiveDDP.h */,
 			);
 			path = "ObjectiveDDP-MAC";
+			sourceTree = "<group>";
+		};
+		EAE0FD9A19640DA900EC2EEC /* Specs Mac */ = {
+			isa = PBXGroup;
+			children = (
+				EAE0FD9B19640DA900EC2EEC /* Rakefile */,
+				EAE0FD9E19640DA900EC2EEC /* Cedar.framework */,
+				EAE0FDA019640DA900EC2EEC /* main.m */,
+				EAE0FDA219640DA900EC2EEC /* ExampleSpec.mm */,
+				EAE0FD9C19640DA900EC2EEC /* Supporting Files */,
+			);
+			path = "Specs Mac";
+			sourceTree = "<group>";
+		};
+		EAE0FD9C19640DA900EC2EEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAE0FD9D19640DA900EC2EEC /* Specs Mac-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		EAFDC0B71963706500646100 /* Other Frameworks */ = {

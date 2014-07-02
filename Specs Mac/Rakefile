@@ -1,0 +1,77 @@
+require 'pathname'
+
+module CedarTargetSpecs_Mac
+  SPECS_TARGET_NAME = "Specs Mac"
+  CONFIGURATION = "Release"
+
+  PROJECT_ROOT = Pathname.new(File.dirname(__FILE__)).parent.to_s
+  BUILD_DIR = File.join(PROJECT_ROOT, "build")
+
+  FileUtils.mkdir_p(File.join(BUILD_DIR, CONFIGURATION))
+
+  class << self
+    def in_project_dir
+      original_dir = Dir.pwd
+      Dir.chdir(PROJECT_ROOT)
+
+      yield
+
+      ensure
+      Dir.chdir(original_dir)
+    end
+
+    def build_dir
+      File.join(BUILD_DIR, CONFIGURATION)
+    end
+
+    def system_or_exit(cmd, stdout = nil)
+      puts "Executing #{cmd}"
+      cmd += " >#{stdout}" if stdout
+      system(cmd) or raise "******** Build failed ********"
+    end
+
+    def with_env_vars(env_vars)
+      old_values = {}
+      env_vars.each do |key,new_value|
+        old_values[key] = ENV[key]
+        ENV[key] = new_value
+      end
+
+      yield
+
+      env_vars.each_key do |key|
+        ENV[key] = old_values[key]
+      end
+    end
+
+    def output_file(target)
+      output_dir = if ENV['IS_CI_BOX']
+        ENV['CC_BUILD_ARTIFACTS']
+      else
+        Dir.mkdir(BUILD_DIR) unless File.exists?(BUILD_DIR)
+        BUILD_DIR
+      end
+
+      output_file = File.join(output_dir, "#{target}.output")
+      puts "Output: #{output_file}"
+      output_file
+    end
+  end
+end
+
+desc "Clean build directory"
+task :clean_Specs_Mac do
+  CedarTargetSpecs_Mac.system_or_exit "rm -rf #{CedarTargetSpecs_Mac::BUILD_DIR}/*", CedarTargetSpecs_Mac.output_file("clean")
+end
+
+desc "Build Specs_Mac Specs"
+task :build_Specs_Mac do
+  CedarTargetSpecs_Mac.system_or_exit(%Q[pushd #{CedarTargetSpecs_Mac::PROJECT_ROOT} ; xcodebuild -target #{CedarTargetSpecs_Mac::SPECS_TARGET_NAME} -configuration #{CedarTargetSpecs_Mac::CONFIGURATION} clean build SYMROOT=#{CedarTargetSpecs_Mac::BUILD_DIR} ; popd ], CedarTargetSpecs_Mac.output_file("Specs Mac"))
+end
+
+desc "Run Specs_Mac Specs"
+task :Specs_Mac => :build_Specs_Mac do
+  CedarTargetSpecs_Mac.with_env_vars("DYLD_FRAMEWORK_PATH" => CedarTargetSpecs_Mac.build_dir, "CEDAR_REPORTER_CLASS" => "CDRColorizedReporter") do
+    CedarTargetSpecs_Mac.system_or_exit(File.join(CedarTargetSpecs_Mac.build_dir, CedarTargetSpecs_Mac::SPECS_TARGET_NAME))
+  end
+end
