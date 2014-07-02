@@ -137,7 +137,6 @@
 		EA781445196396A8002B801D /* libObjectiveDDP-MAC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libObjectiveDDP-MAC.a"; sourceTree = "<group>"; };
 		EA781446196396A8002B801D /* libPods-ObjectiveDDP-MAC-SocketRocket.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPods-ObjectiveDDP-MAC-SocketRocket.a"; sourceTree = "<group>"; };
 		EA781447196396A8002B801D /* libPods-ObjectiveDDP-MAC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPods-ObjectiveDDP-MAC.a"; sourceTree = "<group>"; };
-		EAC204C819640B88005FE94D /* Specs copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Specs copy-Info.plist"; path = "/Users/ma1460/git/ObjectiveDDP/Specs copy-Info.plist"; sourceTree = "<absolute>"; };
 		EAE0FD9B19640DA900EC2EEC /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
 		EAE0FD9D19640DA900EC2EEC /* Specs Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs Mac-Prefix.pch"; sourceTree = "<group>"; };
 		EAE0FD9E19640DA900EC2EEC /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cedar.framework; path = Frameworks/Cedar.framework; sourceTree = "<group>"; };
@@ -206,7 +205,6 @@
 				EA781441196396A8002B801D /* Products-Mac */,
 				07FAC83CF7A34024BB2C9295 /* Pods-ObjectiveDDP.xcconfig */,
 				DD17ECAC516047E5A9048101 /* Pods-ObjectiveDDP-MAC.xcconfig */,
-				EAC204C819640B88005FE94D /* Specs copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
