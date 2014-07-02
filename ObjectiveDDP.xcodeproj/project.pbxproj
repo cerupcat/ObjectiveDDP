@@ -43,7 +43,20 @@
 		570DE62F4BD74C18AE51ED8C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C1F0C9084EA4B2DBD349673 /* libPods.a */; };
 		888B6DFC173B6508001EED80 /* MeteorClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 888B6DFB173B6508001EED80 /* MeteorClient.m */; };
 		888B6DFF173B66EA001EED80 /* BSONIdGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 888B6DFE173B66EA001EED80 /* BSONIdGenerator.m */; };
-		9D3C062D54114FB1AC5700F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BE0B3F1B814D98AAAE26CF /* libPods.a */; };
+		B89EED0370974B0DB6B267A5 /* libPods-ObjectiveDDP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9A1C2EBCCC497B867174AC /* libPods-ObjectiveDDP.a */; };
+		EA78142619638D09002B801D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA78142519638D09002B801D /* Cocoa.framework */; };
+		EA78142819639427002B801D /* libPods-ObjectiveDDP-MAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA78142719639427002B801D /* libPods-ObjectiveDDP-MAC.a */; };
+		EA78142A19639508002B801D /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA78142919639508002B801D /* libicucore.dylib */; };
+		EA78143319639590002B801D /* MeteorClient+Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BAB8CF182051500098524C /* MeteorClient+Parsing.m */; };
+		EA78143419639592002B801D /* MeteorClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 888B6DFB173B6508001EED80 /* MeteorClient.m */; };
+		EA78143519639595002B801D /* BSONIdGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 888B6DFE173B66EA001EED80 /* BSONIdGenerator.m */; };
+		EA78143619639599002B801D /* DependencyProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4011C80317BD2AA6002AA28E /* DependencyProvider.m */; };
+		EA781438196395A3002B801D /* ObjectiveDDP.m in Sources */ = {isa = PBXBuildFile; fileRef = 4000D640170E880400296229 /* ObjectiveDDP.m */; };
+		EAFDC0DA1963714800646100 /* DependencyProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 4011C80217BD2AA6002AA28E /* DependencyProvider.h */; };
+		EAFDC0DB1963714B00646100 /* BSONIdGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 888B6DFD173B66EA001EED80 /* BSONIdGenerator.h */; };
+		EAFDC0DC1963714F00646100 /* MeteorClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 888B6DFA173B6508001EED80 /* MeteorClient.h */; };
+		EAFDC0DE1963716700646100 /* MeteorClient+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 052BE033183F8655005CBD6E /* MeteorClient+Private.h */; };
+		EAFDC0E01963718900646100 /* ObjectiveDDP.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4000D63E170E880400296229 /* ObjectiveDDP.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,12 +70,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAFDC0DF1963717D00646100 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				EAFDC0E01963718900646100 /* ObjectiveDDP.h in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		052BE033183F8655005CBD6E /* MeteorClient+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MeteorClient+Private.h"; sourceTree = "<group>"; };
-		22BE0B3F1B814D98AAAE26CF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		07FAC83CF7A34024BB2C9295 /* Pods-ObjectiveDDP.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveDDP.xcconfig"; path = "Pods/Pods-ObjectiveDDP.xcconfig"; sourceTree = "<group>"; };
 		2459525257B94E909C3CA1DF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		2A9A1C2EBCCC497B867174AC /* libPods-ObjectiveDDP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveDDP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1F0C9084EA4B2DBD349673 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4000D636170E880400296229 /* libObjectiveDDP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjectiveDDP.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4000D639170E880400296229 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -103,6 +128,21 @@
 		888B6DFB173B6508001EED80 /* MeteorClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeteorClient.m; sourceTree = "<group>"; };
 		888B6DFD173B66EA001EED80 /* BSONIdGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONIdGenerator.h; sourceTree = "<group>"; };
 		888B6DFE173B66EA001EED80 /* BSONIdGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSONIdGenerator.m; sourceTree = "<group>"; };
+		DD17ECAC516047E5A9048101 /* Pods-ObjectiveDDP-MAC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveDDP-MAC.xcconfig"; path = "Pods/Pods-ObjectiveDDP-MAC.xcconfig"; sourceTree = "<group>"; };
+		EA78142519638D09002B801D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		EA78142719639427002B801D /* libPods-ObjectiveDDP-MAC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-ObjectiveDDP-MAC.a"; path = "../../Library/Developer/Xcode/DerivedData/ObjectiveDDP-glincxxszallpgardrdhdiejxzww/Build/Products/Debug/libPods-ObjectiveDDP-MAC.a"; sourceTree = "<group>"; };
+		EA78142919639508002B801D /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libicucore.dylib; sourceTree = DEVELOPER_DIR; };
+		EA78144019639662002B801D /* libObjectiveDDP-MAC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libObjectiveDDP-MAC.a"; path = "../../Library/Developer/Xcode/DerivedData/ObjectiveDDP-glincxxszallpgardrdhdiejxzww/Build/Products/Debug/libObjectiveDDP-MAC.a"; sourceTree = "<group>"; };
+		EA781444196396A8002B801D /* ObjectiveDDP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveDDP.h; sourceTree = "<group>"; };
+		EA781445196396A8002B801D /* libObjectiveDDP-MAC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libObjectiveDDP-MAC.a"; sourceTree = "<group>"; };
+		EA781446196396A8002B801D /* libPods-ObjectiveDDP-MAC-SocketRocket.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPods-ObjectiveDDP-MAC-SocketRocket.a"; sourceTree = "<group>"; };
+		EA781447196396A8002B801D /* libPods-ObjectiveDDP-MAC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPods-ObjectiveDDP-MAC.a"; sourceTree = "<group>"; };
+		EAFDC0B41963706500646100 /* libObjectiveDDP-MAC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libObjectiveDDP-MAC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFDC0B51963706500646100 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		EAFDC0B81963706500646100 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EAFDC0B91963706500646100 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EAFDC0BA1963706500646100 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		EAFDC0C61963706500646100 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +155,7 @@
 				401AEB80170E9ECC008B38EA /* SystemConfiguration.framework in Frameworks */,
 				4000D63A170E880400296229 /* Foundation.framework in Frameworks */,
 				401AEB7E170E9EC7008B38EA /* libicucore.dylib in Frameworks */,
-				9D3C062D54114FB1AC5700F0 /* libPods.a in Frameworks */,
+				B89EED0370974B0DB6B267A5 /* libPods-ObjectiveDDP.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +175,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAFDC0B11963706500646100 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA78142A19639508002B801D /* libicucore.dylib in Frameworks */,
+				EA78142619638D09002B801D /* Cocoa.framework in Frameworks */,
+				EA78142819639427002B801D /* libPods-ObjectiveDDP-MAC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -146,6 +196,9 @@
 				4079F9DF170EB31D00194B4A /* Specs */,
 				4000D638170E880400296229 /* Frameworks */,
 				4000D637170E880400296229 /* Products */,
+				EA781441196396A8002B801D /* Products-Mac */,
+				07FAC83CF7A34024BB2C9295 /* Pods-ObjectiveDDP.xcconfig */,
+				DD17ECAC516047E5A9048101 /* Pods-ObjectiveDDP-MAC.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +207,7 @@
 			children = (
 				4000D636170E880400296229 /* libObjectiveDDP.a */,
 				4079F9D9170EB31D00194B4A /* Specs.app */,
+				EAFDC0B41963706500646100 /* libObjectiveDDP-MAC.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +215,10 @@
 		4000D638170E880400296229 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA78144019639662002B801D /* libObjectiveDDP-MAC.a */,
+				EA78142919639508002B801D /* libicucore.dylib */,
+				EA78142719639427002B801D /* libPods-ObjectiveDDP-MAC.a */,
+				EA78142519638D09002B801D /* Cocoa.framework */,
 				2C1F0C9084EA4B2DBD349673 /* libPods.a */,
 				401AEB7D170E9EC7008B38EA /* libicucore.dylib */,
 				4079F9DD170EB31D00194B4A /* CoreGraphics.framework */,
@@ -171,6 +229,10 @@
 				4000D639170E880400296229 /* Foundation.framework */,
 				4079F9DA170EB31D00194B4A /* UIKit.framework */,
 				2C1F0C9084EA4B2DBD349673 /* libPods.a */,
+				EAFDC0B51963706500646100 /* Cocoa.framework */,
+				EAFDC0C61963706500646100 /* XCTest.framework */,
+				EAFDC0B71963706500646100 /* Other Frameworks */,
+				2A9A1C2EBCCC497B867174AC /* libPods-ObjectiveDDP.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -243,13 +305,66 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		EA781441196396A8002B801D /* Products-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				EA781442196396A8002B801D /* include */,
+				EA781445196396A8002B801D /* libObjectiveDDP-MAC.a */,
+				EA781446196396A8002B801D /* libPods-ObjectiveDDP-MAC-SocketRocket.a */,
+				EA781447196396A8002B801D /* libPods-ObjectiveDDP-MAC.a */,
+			);
+			name = "Products-Mac";
+			path = "../../Library/Developer/Xcode/DerivedData/ObjectiveDDP-glincxxszallpgardrdhdiejxzww/Build/Products/Debug";
+			sourceTree = "<group>";
+		};
+		EA781442196396A8002B801D /* include */ = {
+			isa = PBXGroup;
+			children = (
+				EA781443196396A8002B801D /* ObjectiveDDP-MAC */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		EA781443196396A8002B801D /* ObjectiveDDP-MAC */ = {
+			isa = PBXGroup;
+			children = (
+				EA781444196396A8002B801D /* ObjectiveDDP.h */,
+			);
+			path = "ObjectiveDDP-MAC";
+			sourceTree = "<group>";
+		};
+		EAFDC0B71963706500646100 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAFDC0B81963706500646100 /* Foundation.framework */,
+				EAFDC0B91963706500646100 /* CoreData.framework */,
+				EAFDC0BA1963706500646100 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EAFDC0B21963706500646100 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFDC0DA1963714800646100 /* DependencyProvider.h in Headers */,
+				EAFDC0DB1963714B00646100 /* BSONIdGenerator.h in Headers */,
+				EAFDC0DE1963716700646100 /* MeteorClient+Private.h in Headers */,
+				EAFDC0DC1963714F00646100 /* MeteorClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4000D635170E880400296229 /* ObjectiveDDP */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4000D644170E880400296229 /* Build configuration list for PBXNativeTarget "ObjectiveDDP" */;
 			buildPhases = (
+				3929C41BCE2F4F36AFFF4AA9 /* Check Pods Manifest.lock */,
 				4000D632170E880400296229 /* Sources */,
 				4000D633170E880400296229 /* Frameworks */,
 				4000D634170E880400296229 /* CopyFiles */,
@@ -282,6 +397,26 @@
 			productReference = 4079F9D9170EB31D00194B4A /* Specs.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EAFDC0B31963706500646100 /* ObjectiveDDP-MAC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFDC0D81963706500646100 /* Build configuration list for PBXNativeTarget "ObjectiveDDP-MAC" */;
+			buildPhases = (
+				76C97F45F4634D43A3036751 /* Check Pods Manifest.lock */,
+				EAFDC0B01963706500646100 /* Sources */,
+				EAFDC0B11963706500646100 /* Frameworks */,
+				EAFDC0B21963706500646100 /* Headers */,
+				633E6A0C61F34409975C4079 /* Copy Pods Resources */,
+				EAFDC0DF1963717D00646100 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ObjectiveDDP-MAC";
+			productName = "ObjectiveDDP-MAC";
+			productReference = EAFDC0B41963706500646100 /* libObjectiveDDP-MAC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -305,6 +440,7 @@
 			targets = (
 				4000D635170E880400296229 /* ObjectiveDDP */,
 				4079F9D8170EB31D00194B4A /* Specs */,
+				EAFDC0B31963706500646100 /* ObjectiveDDP-MAC */,
 			);
 		};
 /* End PBXProject section */
@@ -336,6 +472,36 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
+		3929C41BCE2F4F36AFFF4AA9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		633E6A0C61F34409975C4079 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ObjectiveDDP-MAC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		648CA590930A4D87BE530DBD /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,7 +514,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-ObjectiveDDP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76C97F45F4634D43A3036751 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -383,6 +565,18 @@
 				4011C80817BD2C06002AA28E /* FakeDependencyProvider.m in Sources */,
 				4011C80B17BD2CA1002AA28E /* DDPSpecHelper.m in Sources */,
 				4011C80E17BD2E14002AA28E /* DependencyProvider+Spec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFDC0B01963706500646100 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA78143319639590002B801D /* MeteorClient+Parsing.m in Sources */,
+				EA78143419639592002B801D /* MeteorClient.m in Sources */,
+				EA78143519639595002B801D /* BSONIdGenerator.m in Sources */,
+				EA781438196395A3002B801D /* ObjectiveDDP.m in Sources */,
+				EA78143619639599002B801D /* DependencyProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +649,7 @@
 		};
 		4000D645170E880400296229 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5286FA1887BC49AFB425645B /* Pods.xcconfig */;
+			baseConfigurationReference = 07FAC83CF7A34024BB2C9295 /* Pods-ObjectiveDDP.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/ObjectiveDDP.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -476,7 +670,7 @@
 		};
 		4000D646170E880400296229 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5286FA1887BC49AFB425645B /* Pods.xcconfig */;
+			baseConfigurationReference = 07FAC83CF7A34024BB2C9295 /* Pods-ObjectiveDDP.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/ObjectiveDDP.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -556,6 +750,74 @@
 			};
 			name = Release;
 		};
+		EAFDC0D41963706500646100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD17ECAC516047E5A9048101 /* Pods-ObjectiveDDP-MAC.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectiveDDP/ObjectiveDDP-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ObjectiveDDP-glincxxszallpgardrdhdiejxzww/Build/Products/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EAFDC0D51963706500646100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD17ECAC516047E5A9048101 /* Pods-ObjectiveDDP-MAC.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectiveDDP/ObjectiveDDP-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ObjectiveDDP-glincxxszallpgardrdhdiejxzww/Build/Products/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,6 +844,15 @@
 			buildConfigurations = (
 				4079F9ED170EB31E00194B4A /* Debug */,
 				4079F9EE170EB31E00194B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFDC0D81963706500646100 /* Build configuration list for PBXNativeTarget "ObjectiveDDP-MAC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFDC0D41963706500646100 /* Debug */,
+				EAFDC0D51963706500646100 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

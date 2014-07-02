@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EAFDC0C41963706500646100"
+               BuildableName = "ObjectiveDDP-MACTests.xctest"
+               BlueprintName = "ObjectiveDDP-MACTests"
+               ReferencedContainer = "container:ObjectiveDDP.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
